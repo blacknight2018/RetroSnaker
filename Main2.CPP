@@ -218,9 +218,10 @@ int main()
 	demsnake[1].x = 3;
 	demsnake[1].y = 3;
     
-	food();
+	
 	winSize(170, 200);
 	map();
+	food();
 	CreateThread(NULL,NULL,(LPTHREAD_START_ROUTINE)thread,NULL,NULL,NULL);
 	mainthread();
 	return 0;
